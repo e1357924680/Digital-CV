@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.6;
+	background: #f8f9fa;
+	color: #343a40;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	background: #007bff;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+}
+
+.main-container {
+	flex: 1;
+	padding: 1rem;
+}
+
+#grocery-section {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#grocery-form {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+#grocery-input {
+	flex: 1;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+}
+
+#grocery-form button {
+	background: #28a745;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#grocery-list {
+	list-style: none;
+	padding: 0;
+}
+
+#grocery-list li {
+	background: white;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+}
+
+#grocery-list li.checked .item-name {
+	text-decoration: line-through;
+	color: gray;
+}
+
+.grocery-actions button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+.grocery-actions button:hover {
+	color: #007bff;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+	background: #007bff;
+	color: white;
+}

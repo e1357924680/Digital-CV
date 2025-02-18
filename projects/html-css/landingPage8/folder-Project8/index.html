@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #8</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="bgImg"><img src="images/bgImg.jpg" alt="Soldier Used Shoes"></div>
+
+        <div class="form-container">
+            <div class="form-header">
+                <h1>הקשיבו, הקשיבו!</h1>
+                <p>חיילים וחיילות בשירות סדיר - ענו על סקר קצר ותהנו משלל מתנות!</p>
+            </div>
+            <div class="form-fields">
+                <form action="" name="survey">
+                    <fieldset>
+                        <label for="firstName">שם פרטי<span style="color: red; font-weight: normal;">*</span></label>
+                        <input type="text" id="firstName" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="surName">שם משפחה</label><br>
+                        <input type="text" id="surName">
+                    </fieldset>
+                    <fieldset>
+                        <label for="phoneNum">מס' טלפון<span>*</span></label><br>
+                        <input type="tel" id="phoneNum" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="eMail">דוא"ל</label><br>
+                        <input type="email" id="eMail">
+                    </fieldset>
+                    <fieldset id="didyouknow">
+                        <label for="yesNoQuestion">האם ידעת שחיילים בשירות סדיר זכאים להטבות במסגרת מועדון ההטבות
+                            TacTicket?<span>*</span></label><br>
+                        <input type="radio" id="yes" name="yesNoQuestion" value="yes" required>
+                        <label for="yes">האמת? ידעתי</label>
+                        <input type="radio" id="no" name="yesNoQuestion" value="no" required>
+                        <label for="no">לא היה לי מושג!</label>
+                    </fieldset>
+                    <fieldset id="adcontent">
+                        <input type="checkbox" id="consent" name="consent" value="yes">
+                        <label for="consent">אני אשמח לקבל תוכן פרסומי.</label>
+                    </fieldset>
+                    <input type="submit" value="שלחו לי מתנה!" id="btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

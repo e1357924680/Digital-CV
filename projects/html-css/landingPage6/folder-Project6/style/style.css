@@ -1,0 +1,316 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	direction: rtl;
+}
+
+.body-container {
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.whatsapp {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+}
+
+.whatsapp img {
+	width: 50px;
+	height: 50px;
+}
+
+.mainBox {
+	width: 100vw;
+	height: 450px;
+	background-color: #0ee1e1;
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	align-items: center;
+}
+
+.mainImg {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mainContent {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	margin: 20px;
+}
+
+.mainContent h1 {
+	font-size: clamp(2.0625rem, 1.65rem + 2.0625vw, 4.125rem);
+	font-family: "Heebo";
+	font-weight: 900;
+	color: #000000;
+}
+
+.mainContent p {
+	font-size: clamp(0.9375rem, 0.875rem + 0.3125vw, 1.25rem);
+	font-family: "Heebo";
+	font-weight: normal;
+	color: #000000;
+}
+
+.squaresGrid {
+	width: 100vw;
+	height: 200px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.square {
+	width: 100%;
+	height: 100%;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.square img[src*="images/icon"] {
+	width: 30px;
+	height: 30px;
+}
+
+.square h3 {
+	font-size: clamp(1.375rem, 1.275rem + 0.5vw, 1.875rem);
+	font-family: "Heebo";
+	font-weight: bold;
+	color: #0ee1e1;
+}
+
+.square p {
+	font-size: 15px;
+	font-family: "Heebo";
+	font-weight: normal;
+	color: #000000;
+}
+
+.contentBox {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.map-container {
+	height: 600px;
+	width: 55%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0ee1e1;
+}
+
+.map-container img {
+	width: 85%;
+	height: 85%;
+}
+
+.form-container {
+	width: 45%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0ffff;
+}
+
+.the-form {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+}
+
+.formContent {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+}
+
+.formContent h2 {
+	font-size: clamp(2rem, 1.825rem + 0.875vw, 2.875rem);
+	font-family: "Heebo";
+	font-weight: 900;
+	color: #090909;
+}
+
+.formContent p {
+	font-size: 15px;
+	font-family: "Heebo";
+	font-weight: normal;
+	color: #000;
+}
+
+.cuponForm {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.cuponForm div[class*="Box"] {
+	margin-top: 20px;
+}
+
+.cuponForm label {
+	font-size: clamp(0.75rem, 0.7375rem + 0.0625vw, 0.8125rem);
+	font-family: "Heebo";
+	font-weight: bold;
+	color: #2c2c2c;
+}
+
+.cuponForm textarea {
+	width: 100%;
+	height: 100px;
+	background-color: #e5eeff;
+	border: 0;
+	border-bottom: 2px solid #0ee1e1;
+	resize: none;
+}
+
+.cuponForm input {
+	width: 100%;
+	height: 35px;
+	background-color: #e5eeff;
+	border: 0;
+	border-bottom: 2px solid #0ee1e1;
+}
+
+.cuponForm input[type="submit"] {
+	background-color: #0ee1e1;
+	color: #000000;
+	text-align: center;
+	border: 0;
+	font-family: "Heebo";
+	font-weight: bold;
+	font-size: clamp(0.8125rem, 0.725rem + 0.4375vw, 1.25rem);
+	cursor: pointer;
+}
+
+.socials {
+	width: 100vw;
+	height: 150px;
+	background-color: #fff;
+	border-bottom: 10px solid #0ee1e1;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	width: 60px;
+	height: 60px;
+	background-color: #0ee1e1;
+	box-shadow: 0px 3px 6px #00000029;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin: 15px;
+}
+
+.social img[src*="images/icon"] {
+	width: 30px;
+	height: auto;
+}
+
+@media (max-width: 1000px) {
+	.mainBox {
+		flex-direction: column;
+		justify-content: center;
+		align-items: right;
+		/* padding: 40px; */
+	}
+
+	.mainImg {
+		margin-right: 40px;
+		align-items: center;
+		justify-content: right;
+		width: 90vw;
+		height: 30%;
+	}
+
+	.mainImg img {
+		height: 70%;
+		width: auto;
+	}
+
+	.mainContent {
+		width: 90vw;
+		height: 50%;
+	}
+
+	.squaresGrid {
+		height: auto;
+		grid-template-columns: repeat(1, 300px);
+		grid-template-rows: repeat(4, 1fr);
+		justify-content: center;
+	}
+
+	.square {
+		width: 300px;
+		height: 250px;
+	}
+
+	.contentBox {
+		flex-direction: column;
+	}
+
+	.map-container {
+		width: 100vw;
+		height: 600px;
+	}
+
+	.form-container {
+		width: 100vw;
+		height: 600px;
+	}
+}
+
+@media (max-width: 480px) {
+	.cuponForm textarea {
+		width: 100%;
+	}
+
+	.cuponForm input {
+		width: 100%;
+	}
+
+	.the-form {
+		width: 80%;
+	}
+}

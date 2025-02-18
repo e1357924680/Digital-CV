@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans";
+}
+
+body {
+	background-color: #f7f0e8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#container {
+	height: 90vh;
+	width: 60vw;
+	text-align: center;
+	margin: 150px auto;
+	background-color: #fffbe7;
+	border: 5px solid #ffd700;
+	border-radius: 20px;
+	padding: 40px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	font-size: 2em;
+	color: #ff4500;
+	margin-bottom: 20px;
+}
+
+button {
+	background-color: #ff6f61;
+	color: white;
+	font-size: 1em;
+	padding: 10px 20px;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+	background-color: #ffcc5c;
+	transform: scale(1.1);
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+#num1,
+#op,
+#num2,
+#eq {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #0066cc;
+}
+
+#userAns {
+	width: 80px;
+	padding: 5px;
+	font-size: 1.2em;
+	text-align: center;
+	border: 2px solid #ff4500;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+#check,
+#next {
+	font-size: 1.1em;
+	padding: 12px 30px;
+	background-color: #66cdaa;
+	color: white;
+}
+
+#check:hover,
+#next:hover {
+	background-color: #ffcc5c;
+}
+
+#message {
+	margin-top: 20px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #32cd32;
+	min-height: 50px;
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 600px) {
+	#container {
+		width: 90%;
+		padding: 20px;
+	}
+
+	button {
+		font-size: 0.9em;
+		padding: 8px 15px;
+	}
+}

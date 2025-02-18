@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trivia Game</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<script src="./script/script.js" defer></script>
+	</head>
+
+	<body>
+		<div class="wrapper" id="opening-screen">
+			<h1>Trivia Game!</h1>
+			<p>Choose The Subject:</p>
+			<button class="subject-btn" onclick="fetchQuestions(0)">
+				Television
+			</button>
+			<button class="subject-btn" onclick="fetchQuestions(1)">Science</button>
+			<button class="subject-btn" onclick="fetchQuestions(2)">Sports</button>
+			<button class="subject-btn" onclick="fetchQuestions(3)">Geography</button>
+			<button class="subject-btn" onclick="fetchQuestions(4)">History</button>
+			<button class="subject-btn" onclick="fetchQuestions(5)">
+				Mathematics
+			</button>
+		</div>
+		<div class="wrapper" id="questions-screen">
+			<div id="timer">Time Left: 10s</div>
+			<div id="score"></div>
+			<div id="trivia-box">
+				<div id="questionBox"></div>
+				<div id="answerA" class="answer"></div>
+				<div id="answerB" class="answer"></div>
+				<div id="answerC" class="answer"></div>
+				<div id="answerD" class="answer"></div>
+			</div>
+		</div>
+		<div class="wrapper" id="game-over">
+			<h1 id="headMessage"></h1>
+			<p id="message"></p>
+			<button class="restartBtn" id="start-over">Try Again!</button>
+		</div>
+	</body>
+</html>

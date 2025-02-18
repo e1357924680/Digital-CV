@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	direction: rtl;
+}
+
+.background-container {
+	width: 100vw;
+	height: 55vh;
+	background-image: url("../images/Path_15.png");
+	background-size: 100vw 55vh;
+	background-position: top right;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.flowBox {
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	background-color: rgba(26, 26, 26, 0.85);
+	top: 15vh;
+	right: 15vw;
+	z-index: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.boxForm {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Heebo";
+	color: white;
+	text-align: right;
+}
+
+.boxForm h1 {
+	font-weight: bold;
+	font-size: clamp(1.5625rem, 1.425rem + 0.6875vw, 2.25rem);
+	margin-bottom: 20px;
+}
+
+.boxForm p {
+	font-weight: normal;
+	font-size: clamp(0.9375rem, 0.875rem + 0.3125vw, 1.25rem);
+	margin-bottom: 30px;
+}
+
+.the-form {
+	display: flex;
+	flex-direction: column;
+	align-items: right;
+}
+
+.form-field {
+	border: 0;
+	width: 100%;
+}
+
+.form-field label {
+	font-weight: bold;
+	font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+}
+
+.form-field input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 20px;
+	border: 1px solid #d31c75;
+}
+
+.btn input {
+	width: 100px;
+	height: 40px;
+	background-color: #d31c75;
+	border: none;
+	cursor: pointer;
+	font-family: "Heebo";
+	font-weight: bold;
+	font-size: clamp(0.9375rem, 0.85rem + 0.4375vw, 1.375rem);
+	color: white;
+	margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+	.background-container {
+		height: 45vh;
+		background-size: 125vw 30vh;
+	}
+
+	.flowBox {
+		top: 15vh;
+		right: 10vw;
+		left: 10vw;
+		width: 80vw;
+		height: 550px;
+	}
+
+	.boxForm h1,
+	.boxForm p {
+		text-align: center;
+	}
+
+	.the-form {
+		width: 100%;
+	}
+
+	.form-field {
+		width: 100%;
+	}
+}

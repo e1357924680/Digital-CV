@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://media.istockphoto.com/id/1158093603/vector/seamless-pattern.jpg?s=612x612&w=0&k=20&c=9S0NCMJy3ya0KrdG7Y9_GMfjuQrCDNj1o1iotlA7do0=');
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333333;
+    font-size: 1.5rem;
+    font-family: "Cinzel";
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.player {
+    flex: 1;
+    padding: 10px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    font-family: "Roboto Slab";
+}
+
+#player1{
+    background-color: #96ff73;
+}
+
+#player2{
+    background-color: #ff8585;
+}
+
+.player::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.card-area {
+    height: 200px;
+    border: 2px solid #cccccc;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card-area img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#round-result {
+    margin-top: 15px;
+    color: #555555;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: "Cardo";
+    font-weight: bold;
+}
+
+.deck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #007BFF;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 600px) {
+    .players {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .player {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .card-area {
+        height: 250px;
+    }
+}
+
+@media (min-width: 900px) {
+    .game-container {
+        width: 70%;
+    }
+
+    .card-area {
+        height: 300px;
+    }
+}

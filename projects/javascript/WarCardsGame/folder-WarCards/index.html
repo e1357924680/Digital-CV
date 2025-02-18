@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Card Game</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js" defer></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>WAR CARD GAME</h1>
+        <div class="players">
+            <div class="player" id="player1">
+                <h2>Player 1</h2>
+                <div class="card-area" id="player1-card">
+                </div>
+                <p>Cards Remaining: <span id="player1-deck-count">26</span></p>
+            </div>
+            <div class="player" id="player2">
+                <h2>Player 2</h2>
+                <div class="card-area" id="player2-card">
+                </div>
+                <p>Cards Remaining: <span id="player2-deck-count">26</span></p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="draw-card-button">Draw Card</button>
+            <p id="round-result">Press "Draw Card" to start!</p>
+        </div>
+    </div>
+</body>
+
+</html>

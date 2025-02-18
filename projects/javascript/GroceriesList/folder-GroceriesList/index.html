@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Groceries List</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<script src="./script/script.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+		/>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/toastify-js"
+		></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>My Groceries List</h1>
+		</header>
+		<div class="main-container">
+			<section id="grocery-section">
+				<form id="grocery-form">
+					<input
+						type="text"
+						id="grocery-input"
+						placeholder="Add a new grocery item..."
+						list="grocery-suggestions"
+						required
+					/>
+					<datalist id="grocery-suggestions"></datalist>
+					<button type="submit">Add</button>
+				</form>
+				<ul id="grocery-list"></ul>
+			</section>
+		</div>
+		<footer>
+			<p>Reut Rosenfeld &copy; 2024</p>
+		</footer>
+	</body>
+</html>

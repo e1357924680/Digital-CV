@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+.opening-screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #ffeb3b;
+	font-family: "Amatic SC", serif;
+	font-weight: 700;
+}
+
+.opening-screen h1 {
+	font-size: clamp(2rem, 5vw, 3rem);
+	margin-bottom: 2rem;
+}
+
+.opening-screen button {
+	padding: 15px 30px;
+	font-size: clamp(1rem, 3vw, 1.5rem);
+	background-color: #ff5722;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.opening-screen button:hover {
+	background-color: #e64a19;
+}
+
+.game-container {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #3b5323, #6b8e23, #9e7d24, #c4b636);
+	font-family: "Amatic SC", serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	margin-bottom: 1rem;
+}
+
+.game-info {
+	margin-bottom: 15px;
+}
+
+#turn-indicator {
+	font-size: clamp(1.2rem, 3vw, 1.8rem);
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+#score {
+	font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.cards-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	max-width: 250px;
+}
+
+.card {
+	width: 100px;
+	height: 100px;
+	background-color: #ddd;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	display: none;
+}
+
+.card.flipped img {
+	display: block;
+}
+
+.card.matched {
+	background-color: #4caf50;
+}
+
+#restart-button {
+	font-size: clamp(1rem, 3vw, 1.5rem);
+	padding: 10px 20px;
+	background-color: #ff5722;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+	background-color: #e64a19;
+}
+
+#winner-message {
+	font-size: clamp(1.2rem, 3vw, 1.8rem);
+	margin-top: 20px;
+	font-weight: bold;
+	color: #ff5722;
+}
+
+@media (min-width: 450px) {
+	.cards-container {
+		max-width: 700px;
+	}
+
+	.card {
+		width: 120px;
+		height: 120px;
+	}
+
+	h1 {
+		font-size: clamp(2rem, 3vw, 3.5rem);
+	}
+
+	#restart-button {
+		font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+	}
+}
+
+@media (min-width: 600px) {
+	.cards-container {
+		max-width: 700px;
+	}
+}

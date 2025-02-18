@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>World Countries</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<script src="./script/script.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>World Countries Database</h1>
+			<input
+				type="text"
+				id="search-box"
+				placeholder="Search for a country..."
+			/>
+			<button id="wishlist-toggle-btn">Wish List</button>
+		</header>
+
+		<main>
+			<div id="country-display">
+				<button class="close-btn">×</button>
+				<div id="country-flag"></div>
+				<div id="country-info"></div>
+			</div>
+			<div id="main-container">
+				<div id="countries-container"></div>
+			</div>
+		</main>
+		<footer>
+			<p>Reut Rosenfeld &copy; 2024 | World Countries Database Project</p>
+		</footer>
+	</body>
+</html>

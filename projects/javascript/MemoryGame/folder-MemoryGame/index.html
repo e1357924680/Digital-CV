@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Memory Game - 2 Players</title>
+		<link rel="stylesheet" href="./style/style.css" />
+		<script src="./script/script.js" defer></script>
+	</head>
+	<body>
+		<div id="opening-screen" class="opening-screen">
+			<h1>Choose Your Device</h1>
+			<button id="mobile-button">Mobile</button>
+			<button id="tablet-button">Tablet</button>
+			<button id="desktop-button">Desktop</button>
+		</div>
+
+		<div id="game-container" class="game-container" style="display: none">
+			<h1>Memory Game - 2 Players</h1>
+
+			<div class="game-info">
+				<div id="turn-indicator">Player 1's Turn</div>
+				<div id="score">
+					<span>Player 1: <span id="player1-score">0</span></span> |
+					<span>Player 2: <span id="player2-score">0</span></span>
+				</div>
+			</div>
+
+			<div class="cards-container" id="cards-container"></div>
+
+			<button id="restart-button">Restart</button>
+
+			<div id="winner-message"></div>
+		</div>
+	</body>
+</html>
